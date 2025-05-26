@@ -1,0 +1,44 @@
+/* Scoreboard Styling */
+.scoreboard-container {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+.score-table {
+  width: 100%;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+.score-table th {
+  background: #2c3e50;
+  color: white;
+  padding: 12px;
+}
+
+.score-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Highlighting */
+.gold { background: #fff3cd; }
+.silver { background: #e2e3e5; }
+.bronze { background: #d6d8d9; }
+
+.gold td:first-child::before { content: "🥇 "; }
+.silver td:first-child::before { content: "🥈 "; }
+.bronze td:first-child::before { content: "🥉 "; }
+
+/* Animations for smooth updates */
+.score-table tr {
+  transition: background-color 0.3s ease;
+}
